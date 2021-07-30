@@ -55,6 +55,7 @@ int main(int argc, char const *argv[])
         // Parsing HTTP Request
   	char requested[strlen(buffer)];
 	strcpy(requested, buffer);
+	//Trying to seperate the headers
 	for (int i =0; i < strlen(requested) - 2; i++)
 	{
 		printf("%c",requested[i]);
